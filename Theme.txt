@@ -1,0 +1,5 @@
+Unseen forces. 
+Make a prototype of a game revolving around the manipulation 
+of an unseen force like gravity or magnetism. 
+The time limit is 6 hours total, including both game development 
+and documentation. The use of AI and pre-existing assets is allowed.
