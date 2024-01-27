@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private float camRotationSpeed = 1f;
+    [SerializeField] private float camRotationSpeed = 15f;
     [SerializeField] private float rotationAngle;
 
     [SerializeField] private UnityEvent<int> OnGravityChange;
