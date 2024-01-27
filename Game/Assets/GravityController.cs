@@ -11,6 +11,7 @@ public class GravityController : MonoBehaviour
 {
     [SerializeField] private GravityGroup[] gravityGroups;
     [SerializeField] private Dictionary<string, Gravity[]> gravityGroupsDictionary = new Dictionary<string, Gravity[]>();
+    public static float globalGravityAngle = 0;
     private string targetGroup;
 
     private void Awake()
@@ -22,10 +23,7 @@ public class GravityController : MonoBehaviour
     }
     public void RotateGlobalGravity(int addedAngle)
     {
-        foreach (var gravity in Gravity.gravities)
-        {
-            gravity.angle += addedAngle;
-        }
+        globalGravityAngle += addedAngle;
     }
     public void SetTargetGroup(string groupName)
     {
