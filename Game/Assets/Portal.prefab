@@ -138,6 +138,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1166669977899930479}
         m_TargetAssemblyTypeName: SceneCaller, Assembly-CSharp
+        m_MethodName: SetFX
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 76151334efdd94945a44cd25e2f74185, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Transition, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1166669977899930479}
+        m_TargetAssemblyTypeName: SceneCaller, Assembly-CSharp
         m_MethodName: FXLoadNextScene
         m_Mode: 1
         m_Arguments:

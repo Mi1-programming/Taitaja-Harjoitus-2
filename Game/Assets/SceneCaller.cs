@@ -33,4 +33,11 @@ public class SceneCaller : MonoBehaviour
     {
         StartCoroutine(FXSceneManager.FXExitIE(FXSceneManager.current));
     }
+    /// <summary>
+    /// Resets the current scene. Uses transition
+    /// </summary>
+    public void FXReset()
+    {
+        StartCoroutine(FXSceneManager.FXLoadSceneIE(SceneManager.GetActiveScene().buildIndex, FXSceneManager.current));
+    }
 }
