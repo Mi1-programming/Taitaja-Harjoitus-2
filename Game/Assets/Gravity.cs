@@ -22,6 +22,6 @@ public class Gravity : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb2d.AddForce(Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.down * force);
+        rb2d.AddForce(Quaternion.AngleAxis(angle + GravityController.globalGravityAngle, Vector3.forward) * Vector3.down * force);
     }
 }
