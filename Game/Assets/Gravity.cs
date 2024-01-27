@@ -7,6 +7,7 @@ public class Gravity : MonoBehaviour
     public int angle = 0;
     public float force = 10.0f;
     private Rigidbody2D rb2d;
+    [SerializeField] private bool obeyGlobal = true;
 
     private void Awake()
     {
@@ -22,6 +23,6 @@ public class Gravity : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb2d.AddForce(Quaternion.AngleAxis(angle + GravityController.globalGravityAngle, Vector3.forward) * Vector3.down * force);
+        rb2d.AddForce(Quaternion.AngleAxis(angle + (obeyGlobal ? GravityController.globalGravityAngle : 0), Vector3.forward) * Vector3.down * force);
     }
 }
